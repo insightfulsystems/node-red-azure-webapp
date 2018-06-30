@@ -1,10 +1,8 @@
 (if not exist \home mkdir \home)
-(if not exist \home\nodered mkdir \home\nodered)
-(if not exist \home\nodered\.node-red mkdir \home\nodered\.node-red)
-copy npm_.cmd \home\nodered\.node-red\npm_.cmd
-pushd \home\nodered\.node-red
-npm install node-red-dashboard node-red-contrib-azureiothubnode node-red-contrib-cognitive-services node-red-contrib-azure-blob-storage node-red-contrib-azure-table-storage node-red-contrib-azure-sql node-red-contrib-azure-documentdb node-red-contrib-azureiotc2d node-red-node-swagger & (
-     copy npm_.cmd npm.cmd /y
-     popd 
-     copy npm_.cmd npm.cmd /y
-)
+cd \home
+curl -L https://github.com/NGRP/node-red-viseo-bot/archive/master.zip --output framework.zip
+unzip framework.zip
+rm framework.zip
+mv node-red-viseo-bot-master viseo-bot-framework
+cd \home\viseo-bot-framework
+npm install
