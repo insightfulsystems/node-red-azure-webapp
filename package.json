@@ -1,0 +1,28 @@
+{
+    "name": "node-red-sarah-azure-webapp",
+    "version": "1.0.0",
+    "description": "A webapp wrapper for running node-red in an Azure Web App",
+    "main": "server.js",
+    "dependencies": {
+      "node-red": "^0.18.4"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "postinstall": "",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+ssh://git@github.com:JpEncausse/node-red-sarah-azure-webapp.git"
+    },
+    "keywords": [
+      "node-red",
+      "Azure"
+    ],
+    "author": "jpencausse",
+    "license": "apache2",
+    "bugs": {
+      "url": "https://github.com/JpEncausse/node-red-sarah-azure-webapp/issues"
+    },
+    "homepage": "https://github.com/JpEncausse/node-red-sarah-azure-webapp#readme"
+  }
