@@ -1,28 +1,25 @@
 {
-    "name": "node-red-sarah-azure-webapp",
+    "name": "viseo-bot-template-azure",
     "version": "1.0.0",
-    "description": "A webapp wrapper for running node-red in an Azure Web App",
-    "main": "server.js",
+    "description": "A webapp wrapper for running VISEO Bot Maker in an Azure Web App",
+    "main": "azure/server.js",
     "dependencies": {
-      "node-red": "^0.18.4"
+        "node-red": "^0.18.4"
     },
     "devDependencies": {},
     "scripts": {
-      "postinstall": "",
-      "test": "echo \"Error: no test specified\" && exit 1"
+        "postinstall": "azure/postinstall.cmd",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
-      "type": "git",
-      "url": "git+ssh://git@github.com:JpEncausse/node-red-sarah-azure-webapp.git"
+        "type": "git",
+        "url": "git+ssh://git@github.com:JpEncausse/viseo-bot-template-azure.git"
     },
-    "keywords": [
-      "node-red",
-      "Azure"
-    ],
-    "author": "jpencausse",
-    "license": "apache2",
+    "keywords": ["node-red", "Azure", "VISEO", "SARAH"],
+    "author": "JpEncausse",
+    "license": "Apache-2.0",
     "bugs": {
-      "url": "https://github.com/JpEncausse/node-red-sarah-azure-webapp/issues"
+        "url": "https://github.com/JpEncausse/viseo-bot-template-azure/issues"
     },
-    "homepage": "https://github.com/JpEncausse/node-red-sarah-azure-webapp#readme"
+    "homepage": "https://github.com/JpEncausse/viseo-bot-template-azure#readme"
   }
