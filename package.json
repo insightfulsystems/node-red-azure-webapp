@@ -2,13 +2,11 @@
     "name": "viseo-bot-template-azure",
     "version": "1.0.0",
     "description": "A webapp wrapper for running VISEO Bot Maker in an Azure Web App",
-    "main": "azure/server.js",
-    "dependencies": {
-        "node-red": "^0.18.4"
-    },
+    "main": "azure\\server.js",
+    "dependencies": {},
     "devDependencies": {},
     "scripts": {
-        "postinstall": "azure/postinstall.cmd",
+        "postinstall": "azure\\postinstall.cmd",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {

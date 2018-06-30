@@ -63,7 +63,7 @@
         }
       },
       "bot-secret":{
-        "type": "string",
+        "type": "secureString",
         "defaultValue": "your secret here",
         "metadata": {
             "description": "Secret used to decode node's encrypted config"
