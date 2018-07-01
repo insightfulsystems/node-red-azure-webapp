@@ -2,7 +2,7 @@
     "name": "viseo-bot-template-azure",
     "version": "1.0.0",
     "description": "A webapp wrapper for running VISEO Bot Maker in an Azure Web App",
-    "main": "azure/server.js",
+    "main": "server.js",
     "dependencies": {},
     "devDependencies": {},
     "scripts": {
