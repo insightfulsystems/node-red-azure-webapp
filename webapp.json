@@ -167,7 +167,7 @@
               "WEBSITE_NODE_DEFAULT_VERSION": "[parameters('nodeJsVersion')]",
               "HOST":           "[parameters('bot-host')]",
               "NODE_ENV":       "[parameters('bot-env')]",
-              "FRAMEWORK_ROOT": "/home/viseo-bot-framework",
+              "FRAMEWORK_ROOT": "/home/site/viseo-bot-framework",
               "BOT_ROOT":       "/home/site/wwwroot",
               "CONFIG_PATH":    "/home/site/wwwroot/conf/config.js"
             }
