@@ -10,7 +10,7 @@ process.argv.push("-s")
 process.argv.push(process.env.FRAMEWORK_ROOT +"/conf/node-red-config.js")
 
 const fs = require('fs')
-fs.writeFileSync('debug_jp.txt','Starting red.js')
+fs.writeFileSync(process.env.BOT_ROOT+'/debug_jp.txt','Starting red.js')
 console.log('Starting red.js');
 
 require(process.env.FRAMEWORK_ROOT+'/node_modules/node-red/red.js')
