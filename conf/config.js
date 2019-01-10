@@ -4,13 +4,13 @@ config.dev = {
   "admin": {
     "users": 
       [{
-        "username": "demo",
-        "password": "$2a$08$dxKDMZrgCSSJuiKW2gxZoeas6AjmWi5oV1GM4pXis9z8p54p4/Xiq",
+        "username": "admin",
+        "password": "$2a$08$v1b4nCPF/fs3Cx0X4PzAOOn7pt1vZ2sPP0hsL87058N.eGPal1FBC",
         "permissions": "*"
       }]
   },
   "server": {
-    "host": "http://localhost"
+    "host": "http://node-red-bot-test.azurewebsites.net"
   }
 };
 
