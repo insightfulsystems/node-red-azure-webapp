@@ -1,5 +1,7 @@
 let config = {};
 
+// TODO: find a way to edit this without having to go into the App Service Editor after deployment
+
 config.dev = {
   "admin": {
     "users": 
@@ -10,7 +12,7 @@ config.dev = {
       }]
   },
   "server": {
-    "host": "http://node-red-bot-test.azurewebsites.net"
+    "host": "http://node-red-azure-webapp.azurewebsites.net"
   }
 };
 

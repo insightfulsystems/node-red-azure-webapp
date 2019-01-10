@@ -1,5 +1,5 @@
 {
-    "name": "viseo-bot-template-azure",
+    "name": "node-red-azure-webapp",
     "version": "1.0.0",
     "description": "A webapp wrapper for running VISEO Bot Maker in an Azure Web App, customised for my own purposes",
     "main": "server.js",
@@ -11,7 +11,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@github.com:rcarmo/viseo-bot-template-azure.git"
+        "url": "git+ssh://git@github.com:rcarmo/node-red-azure-webapp.git"
     },
     "keywords": ["node-red", "Azure", "VISEO"],
     "author": "rcarmo",
