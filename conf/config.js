@@ -12,7 +12,7 @@ config.dev = {
       }]
   },
   "server": {
-    "host": "http://node-red-azure-webapp.azurewebsites.net"
+    "host": "https://viseo-botbuilder.azurewebsites.net"
   }
 };
 
