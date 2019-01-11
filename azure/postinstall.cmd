@@ -5,10 +5,10 @@ cd \home
 cd \home\site
 
 (if exist \home\site\viseo-bot-framework goto :endofscript)
-curl -L https://github.com/rcarmo/node-red-viseo-bot/archive/master.zip --output framework.zip
+curl -L https://github.com/insightfulsystems/viseo-botbuilder-deploy/archive/master.zip --output framework.zip
 unzip framework.zip
 rm framework.zip
-mv node-red-viseo-bot-master viseo-bot-framework
+mv viseo-botbuilder-deploy-master viseo-bot-framework
 cd \home\site\viseo-bot-framework
 npm install
 
