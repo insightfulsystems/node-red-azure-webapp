@@ -4,6 +4,7 @@
     "parameters": {
       "siteName": {
         "type": "string",
+        "defaultValue": "viseo-botbuilder",
         "metadata": {
           "description": "The name of the web app that you wish to create."
         }
@@ -78,7 +79,7 @@
       },
       "bot-host":{
         "type": "string",
-        "defaultValue": "",
+        "defaultValue": "https://viseo-botbuilder.azurewebsites.net",
         "metadata": {
             "description": "External URL for the bot like https://your-bot.azurewebsites.net"
         }
