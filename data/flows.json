@@ -1,0 +1,187 @@
+[
+    {
+        "id": "2c4b42c3.475f86",
+        "type": "tab",
+        "label": "Echo Bot",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "cdceb870.c33108",
+        "type": "tab",
+        "label": "Force Reload",
+        "disabled": false,
+        "info": "This flow forces Node-RED to exit when new flows are deployed, making sure every process instance under App Service has a fresh configuration. The 500ms delay is a way to make sure the `Save`/`Deploy` button doesn't throw up an error message."
+    },
+    {
+        "id": "3da6e55b.535312",
+        "type": "ms-config",
+        "z": "",
+        "name": "Vision API"
+    },
+    {
+        "id": "b96c58d7.bc844",
+        "type": "send-card",
+        "z": "2c4b42c3.475f86",
+        "name": "",
+        "labels": [
+            "Default output"
+        ],
+        "nodeid": "SEND_1547231724203",
+        "delay": "0",
+        "repeat": "0",
+        "outputs": 1,
+        "btnOutput": false,
+        "quickOutput": false,
+        "prompt": false,
+        "promptText": "prompt.text",
+        "promptTextType": "msg",
+        "speech": true,
+        "speechText": "",
+        "sendType": "text",
+        "text": "{payload}",
+        "random": false,
+        "media": "",
+        "mediaType": "str",
+        "eventName": "",
+        "eventValue": "",
+        "eventValueType": "str",
+        "title": "",
+        "titleType": "str",
+        "subtitle": "",
+        "attach": "",
+        "attachType": "str",
+        "carousel": false,
+        "buttons": [
+            {
+                "title": "",
+                "action": "postBack",
+                "value": "",
+                "regexp": ""
+            }
+        ],
+        "quicktext": "",
+        "quickreplies": [
+            {
+                "title": "",
+                "action": "postBack",
+                "value": "",
+                "regexp": ""
+            }
+        ],
+        "signintext": "",
+        "signintitle": "",
+        "signintitleType": "str",
+        "signinurl": "",
+        "signinurlType": "str",
+        "shcardtext": "",
+        "shcardtitle": "",
+        "shcardtitleType": "str",
+        "shcardimage": "",
+        "shcardimageType": "str",
+        "shcardbutton": "",
+        "shcardbuttonType": "str",
+        "shcardurl": "",
+        "shcardurlType": "str",
+        "x": 510,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "631bdc1c.7b732c",
+        "type": "bot",
+        "z": "2c4b42c3.475f86",
+        "name": "",
+        "project": "",
+        "port": "",
+        "resetCommand": "/^reset/i",
+        "delay": "500",
+        "x": 280,
+        "y": 180,
+        "wires": [
+            [
+                "ce855d6b.51bb18",
+                "b96c58d7.bc844"
+            ]
+        ]
+    },
+    {
+        "id": "ce855d6b.51bb18",
+        "type": "debug",
+        "z": "2c4b42c3.475f86",
+        "name": "Incoming message",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 510,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "a1dc8f2d.a5457",
+        "type": "watch",
+        "z": "cdceb870.c33108",
+        "name": "Watch if flows changed",
+        "files": "d:/home/site/wwwroot/data/flows.json",
+        "recursive": "",
+        "x": 140,
+        "y": 60,
+        "wires": [
+            [
+                "96960c2c.f75318",
+                "ad831157.5c6e88"
+            ]
+        ]
+    },
+    {
+        "id": "c3f0699e.0dac18",
+        "type": "exit",
+        "z": "cdceb870.c33108",
+        "name": "",
+        "exitcode": "0",
+        "x": 190,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "96960c2c.f75318",
+        "type": "delay",
+        "z": "cdceb870.c33108",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 170,
+        "y": 100,
+        "wires": [
+            [
+                "c3f0699e.0dac18"
+            ]
+        ]
+    },
+    {
+        "id": "ad831157.5c6e88",
+        "type": "debug",
+        "z": "cdceb870.c33108",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 350,
+        "y": 60,
+        "wires": []
+    }
+]
