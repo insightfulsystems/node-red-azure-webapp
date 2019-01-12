@@ -14,12 +14,6 @@
         "info": "This flow forces Node-RED to exit when new flows are deployed, making sure every process instance under App Service has a fresh configuration. The 500ms delay is a way to make sure the `Save`/`Deploy` button doesn't throw up an error message."
     },
     {
-        "id": "3da6e55b.535312",
-        "type": "ms-config",
-        "z": "",
-        "name": "Vision API"
-    },
-    {
         "id": "b96c58d7.bc844",
         "type": "send-card",
         "z": "2c4b42c3.475f86",
