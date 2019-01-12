@@ -5,7 +5,7 @@ A template for deploying the VISEO Bot Builder in Azure App Service
 ## Roadmap/To Do
 
 * [ ] Use Azure integrated AD authentication
-* [ ] Allow setting the `admin` password hash via an App Service setting/environment variable
+* [ ] Allow setting the `admin` password hash via an App Service setting/environment variable without having to edit `wwwroot/conf/config.js` manually post-deployment
 * [ ] Linux App Service/Kubernetes/Docker support (being [worked on separately](https://github.com/insightfulsystems/viseo-botbuilder-docker) for now)
 * [x] Add bootstrap flows (simple echo bot and reload flow)
 * [x] Add `node-red-contrib-exit´ to terminate `node` and force a quick reload inside App Service whenever `flows.json` is updated
